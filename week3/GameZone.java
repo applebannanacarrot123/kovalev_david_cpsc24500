@@ -18,7 +18,14 @@ public class GameZone {
                              +"2. Rock Paper Scissors%n"
                              +"3. Neither - I'm done!%n"
                              +"Please enter the number of your choice: ");
-            choice = input.nextInt();
+                             
+            try{
+                choice = input.nextInt();
+            }
+            catch(java.util.InputMismatchException e){
+                choice = -1;
+                input.nextLine();
+            }
 
             twentyOne(input, choice);
             rockPaperScissors(choice);
