@@ -1,0 +1,7 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "week_7/CoronaPlotter/lib/jmathio.jar",
+        "week_7/CoronaPlotter/lib/jmathplot.jar"
+    ]
+}
