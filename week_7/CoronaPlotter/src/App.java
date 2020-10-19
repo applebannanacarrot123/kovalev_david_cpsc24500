@@ -1,3 +1,4 @@
+/**
 import java.awt.BorderLayout;
 import java.awt.Container;
 import java.io.File;
@@ -115,6 +116,7 @@ public class App {
      * @param fileReader as a Scanner object of valid data sheet
      * @return LinkedHashMap of country data
      */
+    /**
     public static LinkedHashMap<String, ArrayList<Double>>
                                         readData(Scanner fileReader){
         LinkedHashMap<String, ArrayList<Double>> data =
@@ -142,6 +144,7 @@ public class App {
      * @param countriesToPlot
      * @param daily
      */
+    /**
     public static void createPlots(
                        LinkedHashMap<String, ArrayList<Double>> data,
                        ArrayList<String> countriesToPlot,
@@ -189,3 +192,4 @@ public class App {
 
 
 }
+*/
