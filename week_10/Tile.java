@@ -2,7 +2,7 @@ import java.awt.Color;
 import java.io.Serializable;
 import java.util.Random;
 
-public class Tile implements Serializable{
+public class Tile implements Serializable {
 
     private Color[] COLOR_OPTIONS = {Color.YELLOW,
                                      Color.GREEN,

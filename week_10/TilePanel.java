@@ -31,6 +31,11 @@ public class TilePanel extends JPanel{
         this.repaint();
     }
 
+    public void randomizeTile(int index){
+        this.tiles.get(index).randomize();
+        this.repaint();
+    }
+
     public void randomizeTiles(){
         for(Tile t: this.tiles){
             t.randomize();
@@ -67,25 +72,19 @@ public class TilePanel extends JPanel{
             int x = e.getX();
             int y = e.getY();
             
-            boolean randomize = false;
-
             if(50 < y && y < 200){
                 if(50 < x && x < 200){
-                    randomize = true;
+                    randomizeTile(0);
                 }
                 else if(225 < x && x < 375){
-                    randomize = true;
+                    randomizeTile(1);
                 }
                 else if(400 < x && x < 550){
-                    randomize = true;
+                    randomizeTile(2);
                 }
                 else if(575 < x && x < 725){
-                    randomize = true;
+                    randomizeTile(3);
                 }
-            }
-
-            if(randomize){
-                randomizeTiles();
             }
         }
     
